@@ -298,3 +298,13 @@ document.addEventListener("DOMContentLoaded", () => {
       resetState();
     }
   }
+  restartButton.addEventListener("click", restartQuiz);
+  
+  function resetState() {
+    answerButtons.forEach(button => {
+      button.disabled = false;
+    });
+    questionNumberElement.textContent = currentQuestionIndex + 1;
+    correctElement.textContent = correctCount;
+    incorrectElement.textContent = incorrectCount;
+  }
