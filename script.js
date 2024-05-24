@@ -259,3 +259,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     questionNumberElement.textContent = currentQuestionIndex + 1;
   }
+
+  function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct === "true";
+    if (correct) {
+      correctCount++;
+      correctElement.textContent = correctCount;
+      selectedButton.classList.add("correct");
+    } else {
+      incorrectCount++;
+      incorrectElement.textContent = incorrectCount;
+      const correctButton = answerButtons.find(button => button.dataset.correct === "true");
+      selectedButton.classList.add("incorrect");
+      correctButton.classList.add("correct"); 
+    }
+    answerButtons.forEach(button => {
+      button.disabled = true;
+    });
+    nextButton.style.display = "block"
+  }
