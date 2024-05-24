@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   restartButton.addEventListener("click", restartQuiz);
-  
+
   function resetState() {
     answerButtons.forEach(button => {
       button.disabled = false;
@@ -307,4 +307,13 @@ document.addEventListener("DOMContentLoaded", () => {
     questionNumberElement.textContent = currentQuestionIndex + 1;
     correctElement.textContent = correctCount;
     incorrectElement.textContent = incorrectCount;
+  }
+  function restartQuiz() {
+    currentQuestionIndex = 0;
+    correctCount = 0;
+    incorrectCount = 0;
+    correctElement.textContent = correctCount;
+    incorrectElement.textContent = incorrectCount;
+    endSection.classList.add('hide');
+    startButton.classList.remove('hide');
   }
