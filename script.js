@@ -243,3 +243,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.getElementById("next-button");
 
   startButton.addEventListener("click", startQuiz);
+
+  function startQuiz() {
+    startButton.classList.add('hide');
+    quizSection.classList.remove('hide');
+    loadQuestion();
+  }
+
+  function loadQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    flagImageElement.src = currentQuestion.flagImage;
+    answerButtons.forEach((button, index) => {
+      button.textContent = currentQuestion.answers[index].text;
+      button.dataset.correct = currentQuestion.answers[index].correct;
+    });
+    questionNumberElement.textContent = currentQuestionIndex + 1;
+  }
