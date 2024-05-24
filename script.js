@@ -279,3 +279,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     nextButton.style.display = "block"
   }
+
+  function nextQuestion() {
+    nextButton.style.display = "none"
+    answerButtons.forEach(button => {
+      button.classList.remove("correct", "incorrect");
+    });
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      loadQuestion();
+      answerButtons.forEach(button => {
+        button.disabled = false;
+      });
+    } else {
+      quizSection.classList.add('hide');
+      endSection.classList.remove('hide');
+      endSectionText.textContent = `Quiz finished !!!, You got ${correctCount} out of ${questions.length} correct!`;
+      resetState();
+    }
+  }
