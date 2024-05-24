@@ -241,3 +241,5 @@ document.addEventListener("DOMContentLoaded", () => {
   const endSectionText = document.getElementById("end-section-text");
   const restartButton = document.getElementById("restart-button");
   const nextButton = document.getElementById("next-button");
+
+  startButton.addEventListener("click", startQuiz);
