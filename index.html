@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flags of the World Quiz</title>
+  <link href="assets/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+  <div id="quiz">
+    <div id="quiz-section" class="hide">
+      <h1>Flags of the World Quiz!!!</h1>
+      <div class="quiz">
+        <h2 id="question"> What map is this?</h2>
+        <img src="" alt="flag presented that the user has to guess the country of" id="flag-image">
+        <div id="answer-section">
+          <button class="answer-box">Answer 1</button>
+          <button class="answer-box">Answer 2</button>
+          <button class="answer-box">Answer 3</button>
+          <button class="answer-box">Answer 4</button>
+        </div>
+        <div id="next-section"><button id="next-button">Next</button></div>
+      </div>
+      <div id="score-area">
+        <p class="score">Correct:<span id="Correct">0</span></p>
+        <p class="score">Incorrect:<span id="Incorrect">0</span></p>
+        <span id="question-tracker"><span id="question-number">0</span>/25</span>
+      </div>
+    </div>
+    <div><button id="start-button">Start</button></div>
+    <div id="end-section" class="hide">
+      <p id="end-section-text"></p>
+      <br>
+      <div><button id="restart-button">Restart quiz</button></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
