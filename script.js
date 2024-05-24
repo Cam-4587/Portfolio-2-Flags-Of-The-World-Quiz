@@ -317,3 +317,10 @@ document.addEventListener("DOMContentLoaded", () => {
     endSection.classList.add('hide');
     startButton.classList.remove('hide');
   }
+  answerButtons.forEach(button => {
+    button.addEventListener("click", selectAnswer);
+  });
+  nextButton.addEventListener("click", nextQuestion);
+  
+  loadQuestion();
+});;
