@@ -226,143 +226,158 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     }
   ];
-let currentQuestionIndex = 0;
-let correctCount = 0;
-let incorrectCount = 0;
-let timer;
-let timeLeft = 15;
 
-const flagImageElement = document.getElementById("flag-image");
-const answerButtons = Array.from(document.getElementsByClassName("answer-box"));
-const correctElement = document.getElementById("Correct");
-const incorrectElement = document.getElementById("Incorrect");
-const questionNumberElement = document.getElementById("question-number");
-const startButton = document.getElementById("start-button");
-const quizSection = document.getElementById("quiz-section");
-const endSection = document.getElementById("end-section");
-const endSectionText = document.getElementById("end-section-text");
-const restartButton = document.getElementById("restart-button");
-const nextButton = document.getElementById("next-button");
-const clockText = document.getElementById("clock-text");
+  let currentQuestionIndex = 0;
+  let correctCount = 0;
+  let incorrectCount = 0;
+  let timer;
+  let timeLeft = 15;
+
+  const flagImageElement = document.getElementById("flag-image");
+  const answerButtons = Array.from(document.getElementsByClassName("answer-box"));
+  const correctElement = document.getElementById("Correct");
+  const incorrectElement = document.getElementById("Incorrect");
+  const questionNumberElement = document.getElementById("question-number");
+  const startButton = document.getElementById("start-button");
+  const quizSection = document.getElementById("quiz-section");
+  const endSection = document.getElementById("end-section");
+  const endSectionText = document.getElementById("end-section-text");
+  const restartButton = document.getElementById("restart-button");
+  const nextButton = document.getElementById("next-button");
+  const clockText = document.getElementById("clock-text");
+  const timerElement = document.querySelector(".timer");
 
 
-startButton.addEventListener("click", startQuiz);
+  startButton.addEventListener("click", startQuiz);
+  
 
-function startQuiz() {
-  startButton.classList.add('hide');
-  quizSection.classList.remove('hide');
-  loadQuestion();
-  initializeTimer();
-}
-
-function loadQuestion() {
-  const currentQuestion = questions[currentQuestionIndex];
-  flagImageElement.src = currentQuestion.flagImage;
-  answerButtons.forEach((button, index) => {
-    button.textContent = currentQuestion.answers[index].text;
-    button.dataset.correct = currentQuestion.answers[index].correct;
-  });
-  questionNumberElement.textContent = currentQuestionIndex + 1;
-  resetTimer();
-  startTimer();
-}
-
-function selectAnswer(e) {
-  clearInterval(timer);
-  const selectedButton = e.target;
-  const correct = selectedButton.dataset.correct === "true";
-  if (correct) {
-    correctCount++;
-    correctElement.textContent = correctCount;
-    selectedButton.classList.add("correct");
-  } else {
-    incorrectCount++;
-    incorrectElement.textContent = incorrectCount;
-    const correctButton = answerButtons.find(button => button.dataset.correct === "true");
-    selectedButton.classList.add("incorrect");
-    correctButton.classList.add("correct");
-  }
-  answerButtons.forEach(button => {
-    button.disabled = true;
-  });
-  nextButton.style.display = "block"
-}
-
-function nextQuestion() {
-  nextButton.style.display = "none"
-  answerButtons.forEach(button => {
-    button.classList.remove("correct", "incorrect");
-  });
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  function startQuiz() {
+    startButton.classList.add('hide');
+    quizSection.classList.remove('hide');
     loadQuestion();
+    initializeTimer();
+  }
+
+  function loadQuestion() {
+     timerElement.style.backgroundColor = '#78ff75'; 
+    const currentQuestion = questions[currentQuestionIndex];
+    flagImageElement.src = currentQuestion.flagImage;
+    answerButtons.forEach((button, index) => {
+      button.textContent = currentQuestion.answers[index].text;
+      button.dataset.correct = currentQuestion.answers[index].correct;
+    });
+    questionNumberElement.textContent = currentQuestionIndex + 1;
+    resetTimer();
+    startTimer();
+  }
+
+  function selectAnswer(e) {
+    clearInterval(timer);
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct === "true";
+    if (correct) {
+      correctCount++;
+      correctElement.textContent = correctCount;
+      selectedButton.classList.add("correct");
+    } else {
+      incorrectCount++;
+      incorrectElement.textContent = incorrectCount;
+      const correctButton = answerButtons.find(button => button.dataset.correct === "true");
+      selectedButton.classList.add("incorrect");
+      correctButton.classList.add("correct");
+    }
+    answerButtons.forEach(button => {
+      button.disabled = true;
+    });
+    nextButton.style.display = "block";
+  }
+
+  function nextQuestion() {
+    nextButton.style.display = "none"
+    answerButtons.forEach(button => {
+      button.classList.remove("correct", "incorrect");
+    });
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      loadQuestion();
+      answerButtons.forEach(button => {
+        button.disabled = false;
+      });
+    } else {
+      quizSection.classList.add('hide');
+      endSection.classList.remove('hide');
+      endSectionText.textContent = `Quiz finished !!!, You got ${correctCount} out of ${questions.length} correct!`;
+      resetState();
+    }
+  }
+
+  restartButton.addEventListener("click", restartQuiz);
+
+  function resetState() {
     answerButtons.forEach(button => {
       button.disabled = false;
     });
-  } else {
-    quizSection.classList.add('hide');
-    endSection.classList.remove('hide');
-    endSectionText.textContent = `Quiz finished !!!, You got ${correctCount} out of ${questions.length} correct!`;
-    resetState();
+    questionNumberElement.textContent = currentQuestionIndex + 1;
+    correctElement.textContent = correctCount;
+    incorrectElement.textContent = incorrectCount;
   }
-}
 
-restartButton.addEventListener("click", restartQuiz);
-
-function resetState() {
-  answerButtons.forEach(button => {
-    button.disabled = false;
-  });
-  questionNumberElement.textContent = currentQuestionIndex + 1;
-  correctElement.textContent = correctCount;
-  incorrectElement.textContent = incorrectCount;
-}
-
-function restartQuiz() {
-  currentQuestionIndex = 0;
-  correctCount = 0;
-  incorrectCount = 0;
-  correctElement.textContent = correctCount;
-  incorrectElement.textContent = incorrectCount;
-  endSection.classList.add('hide');
-  startButton.classList.remove('hide');
-}
-
-function startTimer() {
-  timeLeft = 15;
-  clockText.textContent = timeLeft;
-  timer = setInterval(() => {
-    timeLeft--;
+  function restartQuiz() {
+    currentQuestionIndex = 0;
+    correctCount = 0;
+    incorrectCount = 0;
+    correctElement.textContent = correctCount;
+    incorrectElement.textContent = incorrectCount;
+    endSection.classList.add('hide');
+    startButton.classList.remove('hide');
+  }
+  function startTimer() {
+    timeLeft = 15;
     clockText.textContent = timeLeft;
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      handleTimeOut();
-    }
-  }, 1000);
-}
+    timer = setInterval(() => {
+      timeLeft--;
+      if (timeLeft >=11) {
+        timerElement.style.backgroundColor = '#78ff75'; 
+      } else if (timeLeft >=6) {
+        timerElement.style.backgroundColor = '#ffd270';
+      } else if (timeLeft >=0) {
+        timerElement.style.backgroundColor = '#ec8383';
+      } else if (timeLeft <= 0) {
+        clearInterval(timer);
+        handleTimeOut();
+      }
+      clockText.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        handleTimeOut();
+      }
+    }, 1000);
+  }
 
-function resetTimer() {
-  clearInterval(timer);
-  timeLeft = 15;
-  clockText.textContent = timeLeft;
-}
 
-function handleTimeOut() {
-  clockText.innerHTML="Time Out";
-  incorrectCount++;
-  incorrectElement.textContent = incorrectCount;
-  const correctButton = answerButtons.find(button => button.dataset.correct === "true");
-  correctButton.classList.add("correct");
+  function resetTimer() {
+    clearInterval(timer);
+    timeLeft = 15;
+    clockText.textContent = timeLeft;
+  }
+
+  function handleTimeOut() {
+    timerElement.style.backgroundColor =  '#8ae8f5';
+    clockText.innerHTML = "Time Out";
+    incorrectCount++;
+    incorrectElement.textContent = incorrectCount;
+    const correctButton = answerButtons.find(button => button.dataset.correct === "true");
+    correctButton.classList.add("correct");
+    answerButtons.forEach(button => {
+      button.disabled = true;
+    });
+    nextButton.style.display = "block";
+  }
+
   answerButtons.forEach(button => {
-    button.disabled = true;
+    button.addEventListener("click", selectAnswer);
   });
-  nextButton.style.display = "block";
-}
+  nextButton.addEventListener("click", nextQuestion);
 
-answerButtons.forEach(button => {
-  button.addEventListener("click", selectAnswer);
-});
-nextButton.addEventListener("click", nextQuestion);
-
-loadQuestion();
+  loadQuestion();
 });;
