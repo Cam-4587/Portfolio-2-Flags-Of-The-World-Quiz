@@ -373,11 +373,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     nextButton.style.display = "block";
   }
-
   answerButtons.forEach(button => {
     button.addEventListener("click", selectAnswer);
   });
   nextButton.addEventListener("click", nextQuestion);
-
   loadQuestion();
 });;
