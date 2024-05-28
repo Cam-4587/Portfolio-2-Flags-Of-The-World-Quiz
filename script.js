@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 document.addEventListener("DOMContentLoaded", () => {
   const questions = [
     {
@@ -255,7 +256,6 @@ document.addEventListener("DOMContentLoaded", () => {
     startButton.classList.add('hide');
     quizSection.classList.remove('hide');
     loadQuestion();
-    initializeTimer();
   }
 
   function loadQuestion() {
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function nextQuestion() {
-    nextButton.style.display = "none"
+    nextButton.style.display = "none";
     answerButtons.forEach(button => {
       button.classList.remove("correct", "incorrect");
     });
@@ -378,4 +378,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   nextButton.addEventListener("click", nextQuestion);
   loadQuestion();
-});;
+});
