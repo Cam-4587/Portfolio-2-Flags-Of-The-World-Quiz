@@ -34,10 +34,10 @@ body {
 
 .timer {
   position:absolute;
-  right:1.5vb;
-  top:1vh;
-  height:9vh;
-  width:4.5vw;
+  right:1%;
+  top:1%;
+  height:13%;
+  width:9%;
   background:#8ae8f5;
   border-radius:100%;
   display:flex;
