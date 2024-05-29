@@ -1,5 +1,6 @@
+/*google font url imported from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Freeman&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Micro+5+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Fun:wght@400..700&family=Sedan:ital@0;1&display=swap');
-
+/*for the whole webpage that sets out positioning and adds the font-family that is imported from google fonts*/
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +9,12 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: rgb(78, 155, 226);
 }
 
+/*Quiz section styling and positioning that accompanies all quiz elements to do the quiz*/
 #quiz {
   background: #fff;
   width: 90%;
@@ -28,10 +31,13 @@ body {
   position:relative;
 }
 
+/*Positioning for the question*/
 #question {
   padding-top: 5px;
 }
 
+
+/*Styling and positioning for the timer that you can see in the top right hand corner of the answer section*/
 .timer {
   position:absolute;
   right:1%;
@@ -46,13 +52,14 @@ body {
   font-size:80%;
 }
 
+/* styling and positioning for the flag that is used as the question*/
 #flag-image {
   height: auto;
   width: 12rem;
   padding-top: 20px;
   padding-bottom: 17px;
 }
-
+/*stylilng and position for the answer section that outlines the answer buttons into a 2 by 2 grid*/
 #answer-section {
   padding: 5px;
   display: grid;
@@ -62,17 +69,20 @@ body {
   margin-left:3vw;
 }
 
+/*styling and positioning for each of the answer boxes*/
 .answer-box {
   height: 2.5rem;
   width: 6rem;
   border-radius: 10px;
   background: #fff;
 }
+/*removes cursor for when the answer box is disabled, following the
+ timer running out or the qustion being answered*/
 .answer-box:disabled {
   cursor: no-drop;
-
 }
 
+/*correct and incorrect answer stylings that are added and removed at appropriate times throughout the quiz*/
 .correct{
   background: #00ff00;
   transition: background-color 0s;
@@ -82,11 +92,13 @@ body {
   transition: background-color 0s;
 }
 
+/*hover mechanism for each of the buttons*/
 .answer-box:hover {
   background: #c2c0c0;
   color: #fff;
 }
 
+/*stlying and positioning for the start and restart buttons that you see at the beginning and the end of the quiz*/
 #start-button, #restart-button{
   width: 200px;
   height: 110px;
@@ -96,14 +108,18 @@ body {
   padding:10px;
 }
 
+/*hover mechanism for the the start button and restart button*/
 #start-button:hover, #restart-button:hover  {
   background: #c2c0c0;
   color: #fff;
 }
-
+/* hide class that is added and removed from various html elements depending on how far you are in your quiz*/
 .hide {
   display: none;
 }
+
+/*Next section that indclues the next button, styling and position for next button 
+and the section around it between the answer section and the score area*/
 
 #next-section {
   padding-top: 5%;
@@ -117,6 +133,8 @@ body {
   display: none;
 }
 
+/*syling and position for the area at the bottom of the quiz section that 
+displays the correct and incorrect answers as well as the question number*/
 #score-area {
   display: flex;
   justify-content: center;
