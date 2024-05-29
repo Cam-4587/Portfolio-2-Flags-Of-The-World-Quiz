@@ -2,23 +2,30 @@
 <html lang="en-US">
 
 <head>
+  <!--Meta values added to increase search engine optimization-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content = "Flags of the world quiz where the the user is is given 25 questions to see if they can guess which country the flag represents">
   <meta name="keywords" content = "Flag, flag, quiz, questions, timer, timed, 25, world, global,">
+  <!--Website title-->
   <title>Flags of the World Quiz</title>
-  <link href="assets/style.css" rel="stylesheet" type="text/css">
+  <!-- link to css file and favicon icon-->
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
+  <!--Quiz box section-->
   <div id="quiz">
+    <!--Timer and quiz title that can be seen at the top of the question box when going through the array of questions-->
     <div id="quiz-section" class="hide">
       <div class="timer"><p id="clock-text">15</p></div>
       <h1>Flags of the World Quiz!!!</h1>
       <div class="quiz">
+        <!--Question and flag that is used as the question-->
         <h2 id="question"> What map is this?</h2>
         <img src="placeholder-text" alt="flag presented that the user has to guess the country of" id="flag-image">
+        <!--Answer box section and the next button that appears when the question is answered-->
         <div id="answer-section">
           <button class="answer-box">Answer 1</button>
           <button class="answer-box">Answer 2</button>
@@ -27,20 +34,24 @@
         </div>
         <div id="next-section"><button id="next-button">Next</button></div>
       </div>
+      <!--Score area that includes correct ansewrs, incorrect answers and the question number tracker-->
       <div id="score-area">
         <p class="score">Correct:<span id="Correct">0</span></p>
         <p class="score">Incorrect:<span id="Incorrect">0</span></p>
         <span id="question-tracker"><span id="question-number">0</span>/25</span>
       </div>
     </div>
+    <!--Start section that appears at the beggining of the quiz but is then hidden after the start button is selected-->
     <div id="start-section"><h1>Flags of the word Quiz !!!, test yourself to see if you can get these questions correctly, Good luck</h1><br><button id="start-button">Start</button></div>
+    <!--End section that appears after the final question is finisehd displaying your score and shows the button to restart the quiz-->
     <div id="end-section" class="hide">
       <p id="end-section-text"></p>
       <br>
       <div><button id="restart-button">Restart quiz</button></div>
     </div>
   </div>
-  <script src="assets/script.js"></script>
+  <!--Link to the javascript file at the bottom of the body section of the quiz-->
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
