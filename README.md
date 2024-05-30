@@ -26,35 +26,30 @@ The only images that appear in this quiz are the ones to display the flags seen 
     
 # Existing Features
 ## Start button
-
-    The game starts with a start button that is large and easily for users to press. It gives the user control over when they want to start the quiz.
+The game starts with a start button that is large and easily for users to press. It gives the user control over when they want to start the quiz.
 
 ![Start Section](<assets/images/read_me_images/start_section.png>)
 
 ## Header
-
-    Featured at the top of the quiz box the header shows the name of the Quiz : Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question placed underneath that is present throughout the questions.
+Featured at the top of the quiz box the header shows the name of the Quiz : Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question placed underneath that is present throughout the questions.
 
 ## The Question section
+Featured at the top of the quiz box the header shows the name of the Quiz : Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question placed underneath that is present throughout the questions.
 
-    Featured at the top of the quiz box the header shows the name of the Quiz : Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question placed underneath that is present throughout the questions.
+The flag is centred below the question and is paced between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
 
-    The flag is centred below the question and is paced between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
-
-    Underneath the answer grid is displayed the number of correct answers, the number of incorrect answers and the question number along the bottom of the quiz section.
+Underneath the answer grid is displayed the number of correct answers, the number of incorrect answers and the question number along the bottom of the quiz section.
 
 ![question section](<assets/images/read_me_images/question_section.png>)
 
 ## Correct and Incorrect answers
-
-    If the answer selected is correct the correct answer will highlight in green. If the incorrect answer is selected, the correct answer is highlighted in green and the selected incorrect answer is highlighted in red.The correct and incorrect counts are incremented accordingly and the question number increases when you move onto the next question also.
+If the answer selected is correct the correct answer will highlight in green. If the incorrect answer is selected, the correct answer is highlighted in green and the selected incorrect answer is highlighted in red.The correct and incorrect counts are incremented accordingly and the question number increases when you move onto the next question also.
 
 ![correct answer](<assets/images/read_me_images/correct_answer.png>)
 ![incorrect answer](<assets/images/read_me_images/incorrect_answer.png>)
 
 ## Timer
-
-  In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted the next button is displayed.
+In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted the next button is displayed.
 
 ![timer with different times and different background colours](<assets/images/read_me_images/timer.png>)
 
@@ -64,19 +59,17 @@ When the quiz has finished the end section of the quiz is displayed that display
 ![End of the quiz and restart button](<assets/images/read_me_images/end_of_quiz_section.png>)
 
 # Testing
-
  *I have tested this game for responsiveness on Google Chrome and Microsoft Edge on the following devices:
+ 
+    - iPhone SE                iPhone XR             iPhone 12 Pro      
+      iPhone 14 max pro        Pixel 7               Samsung Galaxy S8+ 
+      Samsung Galaxy S20 Ultra iPad Mini             iPad Air           
+      iPad Pro                 Surface Pro 7         Surface Duo        
+      Galaxy Z fold 5          Samsung Galxy A51/71  Nest Hub           
+      Nest Hub Max   
 
-| -------------------------|:--------------------:|------------------:|
-| iPhone SE                |iPhone XR             |iPhone 12 Pro      |
-| iPhone 14 max pro        |Pixel 7               |Samsung Galaxy S8+ |
-| Samsung Galaxy S20 Ultra |iPad Mini             |iPad Air           |
-| iPad Pro                 |Surface Pro 7         |Surface Duo        |
-| Galaxy Z fold 5          |Samsung Galxy A51/71  |Nest Hub           |
-| Nest Hub Max             |                      |                   |
-| -------------------------|:--------------------:|------------------:|
-
-*I have confirmed that the answers are always correct and that the start, next and restart buttons work.
+                                                
+*I have confirmed that the answers are always correct the start, next and restart buttons work and the time out function works.
 
 *I have tested the website on Lighthouse in Chrome dev tools for both Desktop and mobile devices and it passes all of the tests for performance, accessibility, best practices and SEO.
 
