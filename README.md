@@ -22,12 +22,13 @@ The only images that appear in this quiz are the ones to display the flags seen 
  * As a user I want to play the quiz again when I complete it.
 
 # Wireframes
+![Desktop and Mobile device Wireframes](<assets/images/read_me_images/mobile_and_desktop_wireframes.png>)
 ## Desktop and Mobile Wireframes
-    ![Mobile and Desktop wireframes created on Balsamiq](<assets/images/read_me_images/mobile_and_desktop_wireframes.png>)
+    
 # Existing Features
 ## Start button
     The game starts with a start button that is large and easily for users to press. It gives the user control over when they want to start the quiz.
-    ![Start section](<assets/images/read_me_images/start_section.png>)
+![Start_Section] (<assets/images/read_me_images/start_section.png>)
 ## Header
     Featured at the top of the quiz box the header shows the name of the Quiz : Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question placed underneath that is present throughout the questions.
 ## The Question section
@@ -36,13 +37,13 @@ The only images that appear in this quiz are the ones to display the flags seen 
     The flag is centred below the question and is paced between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
 
     Underneath the answer grid is displayed the number of correct answers, the number of incorrect answers and the question number along the bottom of the quiz section.
-    ![question section](<assets/images/read_me_images/question_section.png>)
+![question section](<assets/images/read_me_images/question_section.png>)
 ## Correct and Incorrect answers
     If the answer selected is correct the correct answer will highlight in green. If the incorrect answer is selected, the correct answer is highlighted in green and the selected incorrect answer is highlighted in red.The correct and incorrect counts are incremented accordingly and the question number increases when you move onto the next question also.
-    ![correct and incorrect answers also showing question number incrementing](<assets/images/read_me_images/correct_and_incorrect_answers.png>)
+![correct and incorrect answers also showing question number incrementing](<assets/images/read_me_images/correct_and_incorrect_answers.png>)
 ## Timer
   In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted the next button is displayed.
-![timer with different times and different background colours] (<assets/images/read_me_images/timer.png>)
+![timer_with_different_times_and_different_background_colours] (<assets/images/read_me_images/timer.png>)
 
 ## The end of the quiz/restart section
 When the quiz has finished the end section of the quiz is displayed that displays how many questions you got correct out of the number of questions that exist in the index. Below is a button to restart the quiz. This button takes you back to the start button of the quiz. The restart button taking you back to the start button gives the user even more control over when they want to restart the quiz.
