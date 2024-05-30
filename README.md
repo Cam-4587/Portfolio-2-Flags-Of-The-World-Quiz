@@ -30,11 +30,8 @@ The game starts with a start button that is large and easily for users to press.
 
 ![Start Section](<assets/images/read_me_images/start_section.png>)
 
-## Header
-Featured at the top of the quiz box the header shows the name of the Quiz : Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question placed underneath that is present throughout the questions.
-
 ## The Question section
-Featured at the top of the quiz box the header shows the name of the Quiz : Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question placed underneath that is present throughout the questions.
+Featured at the top of the quiz box the header shows the name of the Quiz Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question present throughout all of the questions throughout the quiz.
 
 The flag is centred below the question and is paced between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
 
@@ -60,13 +57,13 @@ When the quiz has finished the end section of the quiz is displayed that display
 
 # Testing
  *I have tested this game for responsiveness on Google Chrome and Microsoft Edge on the following devices:
- 
-    - iPhone SE                iPhone XR             iPhone 12 Pro      
-      iPhone 14 max pro        Pixel 7               Samsung Galaxy S8+ 
-      Samsung Galaxy S20 Ultra iPad Mini             iPad Air           
-      iPad Pro                 Surface Pro 7         Surface Duo        
-      Galaxy Z fold 5          Samsung Galxy A51/71  Nest Hub           
-      Nest Hub Max   
+
+iPhone SE                iPhone XR             iPhone 12 Pro      
+iPhone 14 max pro        Pixel 7               Samsung Galaxy S8+ 
+Samsung Galaxy S20 Ultra iPad Mini             iPad Air           
+iPad Pro                 Surface Pro 7         Surface Duo        
+Galaxy Z fold 5          Samsung Galxy A51/71  Nest Hub           
+Nest Hub Max   
 
                                                 
 *I have confirmed that the answers are always correct the start, next and restart buttons work and the time out function works.
@@ -81,12 +78,19 @@ When the quiz has finished the end section of the quiz is displayed that display
 ![Lighthouse tests for Mobile](<assets/images/read_me_images/lighthouse_testing_mobile.png>)
 
 ## Validation
+
 My HTML, CSS and Javascript code has been validated with no errors.
+
 ### HTML Validation
+
 ![HTML validation](<assets/images/read_me_images/html_validator.png>)
+
 ### CSS Validation
+
 ![CSS validation](<assets/images/read_me_images/css_validator.png>)
+
 ### Javascript Validation
+
 ![Javascript validation](<assets/images/read_me_images/javascript_validator.png>)
 
 # Unfixed bugs
