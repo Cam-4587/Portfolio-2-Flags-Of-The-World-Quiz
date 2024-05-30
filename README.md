@@ -56,19 +56,19 @@ When the quiz has finished the end section of the quiz is displayed that display
 ![End of the quiz and restart button](<assets/images/read_me_images/end_of_quiz_section.png>)
 
 # Testing
- *I have tested this game for responsiveness on Google Chrome and Microsoft Edge on the following devices:
+* I have tested this game for responsiveness on Google Chrome and Microsoft Edge on the following devices:
 
-iPhone SE                iPhone XR             iPhone 12 Pro      
-iPhone 14 max pro        Pixel 7               Samsung Galaxy S8+ 
-Samsung Galaxy S20 Ultra iPad Mini             iPad Air           
-iPad Pro                 Surface Pro 7         Surface Duo        
-Galaxy Z fold 5          Samsung Galxy A51/71  Nest Hub           
-Nest Hub Max   
+- iPhone SE                iPhone XR             iPhone 12 Pro      
+- iPhone 14 max pro        Pixel 7               Samsung Galaxy S8+ 
+- Samsung Galaxy S20 Ultra iPad Mini             iPad Air           
+- iPad Pro                 Surface Pro 7         Surface Duo        
+- Galaxy Z fold 5          Samsung Galxy A51/71  Nest Hub           
+- Nest Hub Max   
 
                                                 
-*I have confirmed that the answers are always correct the start, next and restart buttons work and the time out function works.
+* I have confirmed that the answers are always correct the start, next and restart buttons work and the time out function works.
 
-*I have tested the website on Lighthouse in Chrome dev tools for both Desktop and mobile devices and it passes all of the tests for performance, accessibility, best practices and SEO.
+* I have tested the website on Lighthouse in Chrome dev tools for both Desktop and mobile devices and it passes all of the tests for performance, accessibility, best practices and SEO.
 
 ### Lighthouse test for Desktop
 ![Lighthouse tests for Desktop](<assets/images/read_me_images/lighthouse_testing_desktop.png>)
