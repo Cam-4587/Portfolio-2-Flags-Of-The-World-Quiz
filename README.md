@@ -35,7 +35,7 @@ The game starts with a start button that is large and easy for users to press. I
 ## The Question section
 Featured at the top of the quiz box the header shows the name of the Quiz Flags of the World Quiz!!! that tells the user what the Quiz is. Underneath the header is the question present throughout all of the questions throughout the quiz.
 
-The flag is centred below the question and is paced between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
+The flag is centred below the question and is placed between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
 
 Underneath the answer grid is displayed the number of correct answers, the number of incorrect answers and the question number along the bottom of the quiz section.
 
@@ -130,9 +130,12 @@ The site was deployed to Github pages. The steps to deploy are as follows:
 
 * This video produced by GreatStack helped to design my website by having the questions array in the way I have done, assigning true and false values to each of the answers so they can be referenced in the Javascript code. Also for the positioning of the quiz section, it is kept in the centre of the webpage across different devices and the correct answers are highlighted in green and incorrect answers are highlighted in red as well as displaying the next button after the answer is selected. [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1856s&pp=ygUPZ3JlYXRzdGFjayBxdWl6)
 
-* MDN Web docs were used to help me arrange the answer buttons in the quiz section in a 2 by 2 grid [Auto-placement in grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Auto-placement_in_grid_layout)
+* MDN Web docs were used to help me arrange the answer buttons in the quiz section in a 2 by 2 grid [Auto-placement in grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Auto-placement_in_grid_layout). MDN was also used to help me put in the box shadows for my quiz section and the start and reset buttons also [box-shadow
+](<https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow>)
 
 * This quiz produced by my Code Institue mentor helped desing my website by having a timer introduced that counts down from 15, changing colour depending on how much time is left on the timer and ending the question when the timer runs out. [Geo Master](https://alan-bushell.github.io/geo-masters/#)
+
+* This quiz produced James Q Quick showed me the transistion CSS styling feature that I have used in my Quiz for my incorrect and correct answer classes so that the green and red backgrounds to set to 0s, helping the quiz indicate correct and incorrect answers instantly without a delay. [Build a Quiz App (2) - Create and Style the Game Page](https://www.youtube.com/watch?v=IK257Ln0MZc&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=3)
 
 ## Media
 * The flag image files originated from Flagpedia.net -  [Original source for flag images](https://flagpedia.net/download/icons)
@@ -140,6 +143,8 @@ The site was deployed to Github pages. The steps to deploy are as follows:
 * The fonts used was  the 'freeman' font that was imported from google fonts - [Original source for 'Freeman' font](<https://fonts.google.com/specimen/Freeman?query=freeman>)
 
 * The favicon used originated from Flaticon - [Globe favicon](<https://www.flaticon.com/free-icon/worldwide_814513?term=globe&page=1&position=8&origin=search&related_id=814513>)
+
+* Wireframes for Desktop and Mobile devices were generated on [Balsamiq](https://balsamiq.cloud/sxud8vh/pabf3xq/r9085)
 
 
 
