@@ -1,37 +1,39 @@
 # Flags of the World Quiz !!!
 ![Image showing website's responsiveness on different devices](<assets/images/read_me_images/am_i_responsive_image.png>)
+___
 
-The flags of the world quiz is a quiz that you can try with friends, family and colleagues to test yourself against a timer of 15 seconds to see if you can match all 25 flags to the correct countries that they represent.
+The Flags of the World quiz is a quiz developed as a front-end website using HTML, CSS and Javascript. You can try this quiz along with friends, family or colleagues to test yourself by answering 25 questions in the form of answering which country the flag belongs to with a 15-second timer in the corner of the quiz.
 
-By Cameron Conroy
-
+-By Cameron Conroy
+___ 
 # UX design
 ## Colour
-My project is minimalistic in terms of its page structure so I added some color to the quiz to make it  more visually appealing to the user.  I added a background colour of RGB (78, 155, 226) to the body section, and rather than the quiz section having a white background I chose a background colour of #ebf8f8 that contrasts nicely with the page background colour and allows flags with white in it to be visible on the page. 
+My project is minimalistic in terms of its page structure so I added some color to the quiz to make it more visually appealing to the user.  I added a background colour of RGB (78, 155, 226) to the body section. Rather than the quiz section having a white background I chose a background colour of #ebf8f8 that contrasts nicely with the page background colour and allows flags with white in it to be visible on the quiz section.
 
 ## Font
-I imported the font from Google Fonts and chose the "Freeman" font  This is  it appealed to me as a font that when used made the quiz look more like a game for users to enjoy rather than a formal-looking quiz.
+I imported the font from Google Fonts and chose the "Freeman" font. It appealed to me as a font because when used it made the quiz look more like a game for users to enjoy rather than a formal-looking quiz.
 ## Images 
 The only images that appear in this quiz are the ones to display the flags seen in the questions. They have a width of 320 pixels with slightly varying heights across the images so that these images will have enough resolution to be clearly seen by the user. The images for the flags came from [Flagpedia](https://flagpedia.net/download/icons)
 
-## User Stories
- * As a user I want to play a quiz that looks like a game rather than a formal quiz.
+# User Stories
+ * As a user, I want to play a quiz that looks like a game rather than a formal quiz.
  * As a user I want to have control over when I can start and restart the quiz.
  * As a user I want to have the number of correct and incorrect answers tracked throughout the quiz.
  * As a user I want to play the quiz again when I complete it.
 
-# Wireframes
+
+# Desktop and Mobile Wireframes
 ![Desktop and Mobile device Wireframes](<assets/images/read_me_images/mobile_and_desktop_wireframes.png>)
-## Desktop and Mobile Wireframes
+
     
 # Existing Features
 ## Start button
-The game starts with a start button that is large and easily for users to press. It gives the user control over when they want to start the quiz.
+The game starts with a start button that is large and easy for users to press. It gives the user control over when they want to start the quiz. Above the start button is an introductory text that tells the user they are about to participate in the World Flags quiz, avoiding starting the quiz with an ambiguous start button.
 
 ![Start Section](<assets/images/read_me_images/start_section.png>)
 
 ## The Question section
-Featured at the top of the quiz box the header shows the name of the Quiz Flags of the World Quiz!!! that clearly tells the user what the Quiz is. Underneath the header is the question present throughout all of the questions throughout the quiz.
+Featured at the top of the quiz box the header shows the name of the Quiz Flags of the World Quiz!!! that tells the user what the Quiz is. Underneath the header is the question present throughout all of the questions throughout the quiz.
 
 The flag is centred below the question and is paced between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
 
@@ -40,13 +42,13 @@ Underneath the answer grid is displayed the number of correct answers, the numbe
 ![question section](<assets/images/read_me_images/question_section.png>)
 
 ## Correct and Incorrect answers
-If the answer selected is correct the correct answer will highlight in green. If the incorrect answer is selected, the correct answer is highlighted in green and the selected incorrect answer is highlighted in red.The correct and incorrect counts are incremented accordingly and the question number increases when you move onto the next question also.
+If the answer selected is correct the correct answer will be highlighted in green. If the incorrect answer is selected, the correct answer is highlighted in green and the selected incorrect answer is highlighted in red. The proper and incorrect counts are incremented accordingly and the question number increases when you move on to the next question. This makes it clear to the user whether their answer is correct and they can track their progress throughout the quiz.
 
 ![correct answer](<assets/images/read_me_images/correct_answer.png>)
 ![incorrect answer](<assets/images/read_me_images/incorrect_answer.png>)
 
 ## Timer
-In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted the next button is displayed.
+In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted the next button is displayed. This gives the user a clear visual cue as to how much time they have left to answer the question but being placed in the corner of the quiz area won't distract them from the quiz section.
 
 ![timer with different times and different background colours](<assets/images/read_me_images/timer.png>)
 
@@ -56,55 +58,63 @@ When the quiz has finished the end section of the quiz is displayed that display
 ![End of the quiz and restart button](<assets/images/read_me_images/end_of_quiz_section.png>)
 
 # Testing
-* I have tested this game for responsiveness on Google Chrome and Microsoft Edge on the following devices:
-    iPhone SE             
-    iPhone XR            
-    iPhone 12 Pro      
-    iPhone 14 max pro       
-    Pixel 7               
-    Samsung Galaxy S8+ 
-    Samsung Galaxy S20 Ultra 
-    iPad Mini             
-    iPad Air           
-    iPad Pro                 
-    Surface Pro 7        
-    Surface Duo        
-    Galaxy Z fold 5         
-    Samsung Galxy A51/71  Nest Hub           
-    Nest Hub Max   
+*  I have tested this game for responsiveness on Google Chrome and   Microsoft Edge on the following devices:
+
+    - iPhone SE             
+    - iPhone XR            
+    - iPhone 12 Pro      
+    - iPhone 14 max pro       
+    - Pixel 7               
+    - Samsung Galaxy S8+ 
+    - Samsung Galaxy S20 Ultra 
+    - iPad Mini             
+    - iPad Air           
+    - iPad Pro                 
+    - Surface Pro 7        
+    - Surface Duo        
+    - Galaxy Z fold 5         
+    - Samsung Galaxy A51/71  Nest Hub           
+    - Nest Hub Max   
 
                                                 
-* I have confirmed that the answers are always correct the start, next and restart buttons work and the time out function works.
+* I have confirmed that the answers are always correct, the start, next and restart buttons work and the time-out function works.
 
 * I have tested the website on Lighthouse in Chrome dev tools for both Desktop and mobile devices and it passes all of the tests for performance, accessibility, best practices and SEO.
 
 ### Lighthouse test for Desktop
 ![Lighthouse tests for Desktop](<assets/images/read_me_images/lighthouse_testing_desktop.png>)
 
+___
+
 ### Lighthouse test for Mobile
 
 ![Lighthouse tests for Mobile](<assets/images/read_me_images/lighthouse_testing_mobile.png>)
 
-## Validation
+___
 
-My HTML, CSS and Javascript code has been validated with no errors.
-
-### HTML Validation
-
-![HTML validation](<assets/images/read_me_images/html_validator.png>)
-
-### CSS Validation
-
-![CSS validation](<assets/images/read_me_images/css_validator.png>)
-
-### Javascript Validation
-
-![Javascript validation](<assets/images/read_me_images/javascript_validator.png>)
-
+>## Validation
+>
+>My HTML, CSS and Javascript code has been validated with no errors.
+>
+>#### HTML Validation
+>
+>***
+>
+>![HTML validation](<assets/images/read_me_images/html_validator.png>)
+>
+>#### CSS Validation
+>
+>***
+>![CSS validation](<assets/images/read_me_images/css_validator.png>)
+>
+>#### Javascript Validation
+>***
+>![Javascript validation](<assets/images/read_me_images/javascript_validator.png>)
+>
 # Unfixed bugs
-* There are no bugs that prevent the quiz being functional.
-* However on smaller screens the selected answer doesn't highlight in red or green but the incorrect/correct count increases to indicate a correct or incorrect answer and if the incorrect answer is selected, the correct answer is highlighted in green to show what the correct answer is.
-* The hover mechanism is still in place after the answer is selected, but the buttons still disable and the green/red background Colours still present themselves indicating correct/incorrect answers.
+* There are no bugs that prevent the quiz from being functional.
+* However on smaller screens, the selected answer isn't highlighted in red or green but the incorrect/correct count increases to indicate a correct or incorrect answer and if the incorrect answer is selected, the correct answer is highlighted in green to show what the correct answer is.
+* The hover mechanism is still in place after the answer is selected, but the buttons are still disabled and the green/red background Colours still present themselves indicating correct/incorrect answers.
 
 # Deployment
 The site was deployed to Github pages. The steps to deploy are as follows:
@@ -118,7 +128,7 @@ The site was deployed to Github pages. The steps to deploy are as follows:
 ## Content
 * This video produced by Web dev simplified helped to design my quiz with a start and restart button as well as creating a hidden class that helped to hide and reveal HTML elements throughout the quiz [Build A Quiz App with Javascript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1047s)
 
-* This video produced by GreatStack helped to design my website by having the questions array in a way I have done, assigning true and false values to each of the answers so they can be referenced in the Javascript code. Also for the positioning of the quiz section, it is kept in the centre of the webpage across different devices and the correct answers are highlighted in green and incorrect answers are highlighted in red as well as displaying the next button after the answer is selected. [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1856s&pp=ygUPZ3JlYXRzdGFjayBxdWl6)
+* This video produced by GreatStack helped to design my website by having the questions array in the way I have done, assigning true and false values to each of the answers so they can be referenced in the Javascript code. Also for the positioning of the quiz section, it is kept in the centre of the webpage across different devices and the correct answers are highlighted in green and incorrect answers are highlighted in red as well as displaying the next button after the answer is selected. [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1856s&pp=ygUPZ3JlYXRzdGFjayBxdWl6)
 
 * MDN Web docs were used to help me arrange the answer buttons in the quiz section in a 2 by 2 grid [Auto-placement in grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Auto-placement_in_grid_layout)
 
