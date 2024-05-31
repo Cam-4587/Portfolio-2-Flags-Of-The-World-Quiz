@@ -33,7 +33,7 @@ The game starts with a start button that is large and easy for users to press. I
 ![Start Section](<assets/images/read_me_images/start_section.png>)
 
 ## The Question section
-Featured at the top of the quiz box the header shows the name of the Quiz Flags of the World Quiz!!! that tells the user what the Quiz is. Underneath the header is the question present throughout all of the questions throughout the quiz.
+Featured at the top of the quiz box is the header "Flags of the World Quiz!!!" that tells the user what the quiz will be. Underneath the header is the question "what map is this?" that is present throughout all of the questions throughout the quiz.
 
 The flag is centred below the question and is placed between the question and the answer boxes. The answer boxes are placed below the flag and are arranged in a 2 by 2 grid giving the user 4 potential answers to select from.
 
@@ -42,15 +42,17 @@ Underneath the answer grid is displayed the number of correct answers, the numbe
 ![question section](<assets/images/read_me_images/question_section.png>)
 
 ## Correct and Incorrect answers
-If the answer selected is correct the correct answer will be highlighted in green. If the incorrect answer is selected, the correct answer is highlighted in green and the selected incorrect answer is highlighted in red. The proper and incorrect counts are incremented accordingly and the question number increases when you move on to the next question. This makes it clear to the user whether their answer is correct and they can track their progress throughout the quiz.
+If the answer selected is correct the correct answer will be highlighted in green. If the incorrect answer is selected, the correct answer is highlighted in green and the selected incorrect answer is highlighted in red. The correct and incorrect counts are incremented accordingly and the question number increases when you move on to the next question. This makes it clear to the user whether their answer is correct and they can track their progress throughout the quiz.
 
 ![correct answer](<assets/images/read_me_images/correct_answer.png>)
 ![incorrect answer](<assets/images/read_me_images/incorrect_answer.png>)
 
 ## Timer
-In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted the next button is displayed. This gives the user a clear visual cue as to how much time they have left to answer the question but being placed in the corner of the quiz area won't distract them from the quiz section.
+In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted and the next button is displayed. This gives the user a clear visual cue as to how much time they have left to answer the question but being placed in the corner of the quiz area won't distract them from the quiz section.
 
 ![timer with different times and different background colours](<assets/images/read_me_images/timer.png>)
+
+![imed out question](<assets/images/read_me_images/time_out.png>)
 
 ## The end of the quiz/restart section
 
