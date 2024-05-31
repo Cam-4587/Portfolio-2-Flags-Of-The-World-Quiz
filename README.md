@@ -2,7 +2,7 @@
 ![Image showing website's responsiveness on different devices](<assets/images/read_me_images/am_i_responsive_image.png>)
 ___
 
-The Flags of the World quiz is a quiz developed as a front-end website using HTML, CSS and Javascript. You can try this quiz along with friends, family or colleagues to test yourself by answering 25 questions in the form of answering which country the flag belongs to with a 15-second timer in the corner of the quiz.
+The Flags of the World quiz is a quiz developed as a front-end website using HTML, CSS and Javascript. You can try this quiz along with friends, family or colleagues, answering 25 questions in the form of which country the flag in question belongs to with a 15-second timer in the corner of the quiz.
 
 -By Cameron Conroy
 ___ 
@@ -48,7 +48,7 @@ If the answer selected is correct the correct answer will be highlighted in gree
 ![incorrect answer](<assets/images/read_me_images/incorrect_answer.png>)
 
 ## Timer
-In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of Time out is displayed. When the timer runs out the correct answer is highlighted and the next button is displayed. This gives the user a clear visual cue as to how much time they have left to answer the question but being placed in the corner of the quiz area won't distract them from the quiz section.
+In the top right-hand corner of the quiz section, there is a timer that counts down from 15. Between 15 and 10 seconds the timer is red, between 10 and 5 seconds the timer is orange, between 5 and 0 seconds the timer is red and when time has run out the timer turns blue and a message of 'Time out' is displayed. When the timer runs out the correct answer is highlighted and the next button is displayed. This gives the user a clear visual cue as to how much time they have left to answer the question but being placed in the corner of the quiz area won't distract them from the quiz section.
 
 ![timer with different times and different background colours](<assets/images/read_me_images/timer.png>)
 
@@ -75,7 +75,8 @@ When the quiz has finished the end section of the quiz is displayed that display
     - Surface Pro 7        
     - Surface Duo        
     - Galaxy Z fold 5         
-    - Samsung Galaxy A51/71  Nest Hub           
+    - Samsung Galaxy A51/71  
+    - Nest Hub           
     - Nest Hub Max   
 
                                                 
@@ -128,16 +129,16 @@ The site was deployed to Github pages. The steps to deploy are as follows:
 # Credits
 
 ## Content
-* This video produced by Web dev simplified helped to design my quiz with a start and restart button as well as creating a hidden class that helped to hide and reveal HTML elements throughout the quiz [Build A Quiz App with Javascript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1047s)
+* This video produced by Web dev simplified helped to design my quiz with a start and restart button as well as creating a 'hide' class that helped to hide and reveal HTML elements throughout the quiz [Build A Quiz App with Javascript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1047s)
 
 * This video produced by GreatStack helped to design my website by having the questions array in the way I have done, assigning true and false values to each of the answers so they can be referenced in the Javascript code. Also for the positioning of the quiz section, it is kept in the centre of the webpage across different devices and the correct answers are highlighted in green and incorrect answers are highlighted in red as well as displaying the next button after the answer is selected. [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1856s&pp=ygUPZ3JlYXRzdGFjayBxdWl6)
 
-* MDN Web docs were used to help me arrange the answer buttons in the quiz section in a 2 by 2 grid [Auto-placement in grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Auto-placement_in_grid_layout). MDN was also used to help me put in the box shadows for my quiz section and the start and reset buttons also [box-shadow
-](<https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow>)
+* MDN Web docs were used to help me arrange the answer buttons in the quiz section in a 2 by 2 grid ([Auto-placement in grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Auto-placement_in_grid_layout)). MDN was also used to help me put in the box shadows for my quiz section and the start and reset buttons also ([box-shadow link
+](<https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow>)).
 
-* This quiz produced by my Code Institue mentor helped desing my website by having a timer introduced that counts down from 15, changing colour depending on how much time is left on the timer and ending the question when the timer runs out. [Geo Master](https://alan-bushell.github.io/geo-masters/#)
+* This quiz produced by my Code Institute mentor helped design my website by having a timer introduced that counts down from 15, changing colour depending on how much time is left on the timer and ending the question when the timer runs out. [Geo Master](https://alan-bushell.github.io/geo-masters/#)
 
-* This quiz produced James Q Quick showed me the transistion CSS styling feature that I have used in my Quiz for my incorrect and correct answer classes so that the green and red backgrounds to set to 0s, helping the quiz indicate correct and incorrect answers instantly without a delay. [Build a Quiz App (2) - Create and Style the Game Page](https://www.youtube.com/watch?v=IK257Ln0MZc&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=3)
+* This quiz produced James Q Quick showed me the 'transistion' CSS styling feature that I have used in my Quiz for my incorrect and correct answer classes so that the green and red backgrounds are set to 0s, helping the quiz indicate correct and incorrect answers instantly without a delay. [Build a Quiz App (2) - Create and Style the Game Page](https://www.youtube.com/watch?v=IK257Ln0MZc&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=3)
 
 ## Media
 * The flag image files originated from Flagpedia.net -  [Original source for flag images](https://flagpedia.net/download/icons)
